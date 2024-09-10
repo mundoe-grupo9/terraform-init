@@ -1,0 +1,9 @@
+resource "aws_db_instance" "default" {
+  allocated_storage    = 10
+  db_name              = "terraform"
+  engine               = "postgres"
+#   engine_version       = "16"
+  instance_class       = "db.t2.micro"
+  username             = "diego"
+  password             = "feversani"
+}
