@@ -25,7 +25,7 @@ jobs:
       - name: Terraform Validate
         run: |
           terraform init  
-          terraform validate
+          terraform validate 
 
   plan:
     name: Terraform Plan
@@ -63,7 +63,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_AK }}
           aws-secret-access-key: ${{ secrets.AWS_SK }}
-          aws-region: us-east-1
+          aws-region: us-east-1 
       - name: Initialise project and plan
         run: |
           terraform init -input=false
